@@ -36,11 +36,20 @@ Just download and copy DisableConstraints.swift into your project. It's just a s
 	viewB.isHidden = false
 	viewB.areConstraintsActive = true
 
+There are also two simple helper functions to make your code a bit clearer and get rid of
+the mess of `true`s and `false`s:
+
+	// Hide view B and disable all constraints related to it.
+	viewB.hideAndDisableConstraints()
+	...
+	// Show view B again and re-enable all constraints related to it.
+	viewB.showAndEnableConstraints()
+
 ## Author ##
 
 Dag Ågren ([paracelsus@gmail.com](mailto:paracelsus@gmail.com),
-[@WAHa_06x36](https://twitter.com/WAHa_06x36),
 [@WAHa_06x36@mastodon.social](https://mastodon.social/@WAHa_06x36),
+[@WAHa_06x36](https://twitter.com/WAHa_06x36),
 [wakaba.c3.cx](http://wakaba.c3.cx/))
 
 ## License ##

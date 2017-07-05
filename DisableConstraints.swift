@@ -42,3 +42,15 @@ extension UIView {
  		}
 	}
 }
+
+extension UIView {
+	func hideAndDisableConstraints() {
+		isHidden = true
+		areConstaintsActive = false
+	}
+
+	func showAndEnableConstraints() {
+		isHidden = false
+		areConstaintsActive = true
+	}
+}
